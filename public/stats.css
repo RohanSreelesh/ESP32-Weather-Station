@@ -1,0 +1,40 @@
+		/* set container styles */
+        html {
+            font-family: Arial;
+            display: inline-block;
+            margin: 0px auto;
+            text-align: center;
+            background-color:  #fff;
+            
+           }
+        
+           .container {
+            margin: 0 auto;
+            width: 60%;
+            text-align: center;
+            border: 2px solid #333;
+            background-color: #fde1ac;
+            padding: 20px;
+            border-radius: 10px;
+            box-shadow: 0px 0px 10px rgba(0,0,0,0.2);
+            position: absolute;
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+          }
+          
+/* set chart styles */
+
+/* set menu styles */
+.menu {
+    display: flex;
+    justify-content: center;
+    margin: 20px 0;
+    padding: 10px;
+    
+  }
+
+.menu select {
+    margin: 0 10px;
+    padding: 5px;
+}

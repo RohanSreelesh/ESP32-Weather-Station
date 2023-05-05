@@ -1,0 +1,30 @@
+doctype html
+html
+  head
+    title Temperature and Humidity Chart
+    script(src="https://cdn.jsdelivr.net/npm/chart.js")
+    link(rel="stylesheet", href="./stats.css")
+    
+  body(onload='main()')
+    div.container
+      h1 Temperature and Humidity Charts
+    
+      // display chart
+      canvas#myChart
+      // link to external stylesheet and script
+      // create menu to switch between temperature and humidity
+      .menu
+        label(for='data-type') Data Type:
+        select#data-type
+          option(value='temperature') Temperature
+          option(value='humidity') Humidity
+      // create menu to switch between today, yesterday, and last week
+      .menu
+        label(for='time-range') Time Range:
+        select#time-range
+          option(value='today') Today
+          option(value='yesterday') Yesterday
+          option(value='last-week') Last Week
+    script(src='./stats_script.js')
+    link(rel='stylesheet', href='./stats.css')
+
